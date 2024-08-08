@@ -6,13 +6,24 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { OrderComponent } from './pages/order/order.component';
+
+import { ToggleCasePipe } from './pages/pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pages/pipes/can-fly.pipe';
+import { SortByPipe } from './pages/pipes/sortBy.pipe';
 
 
 @NgModule({
   declarations: [
     BasicsPageComponent,
     NumbersPageComponent,
-    UncommonPageComponent
+    UncommonPageComponent,
+    OrderComponent,
+
+    //Pipes
+    ToggleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
